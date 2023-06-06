@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khabar Wala - News WebApp</title>
+    <link rel="shortcut icon" href="image/newspaper.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="index.html" class="company-logo flex">
+                <div id="news">KHABAR</div>
+                <div id="page">WALA</div>
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="cricket" onclick="clickOnNavItem('cricket')">Cricket</li>
+                    <li class="hover-link nav-item" id="finance" onclick="clickOnNavItem('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="clickOnNavItem('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" class="news-input" id="search-news" placeholder="e.g. Science">
+                <button class="search-btn" id="search-btn">Search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="cards-container new-container" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" id="news-img" alt="news image">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 25/9/21</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sit eveniet vel voluptatibus mollitia inventore debitis repellendus tempore illo dolor!</p>
+            </div>  
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
